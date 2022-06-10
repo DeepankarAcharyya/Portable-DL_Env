@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt-get install git libcairo2-dev pkg-config ffmpeg -y
 RUN apt-get update && apt-get install -y python3.7 python3-distutils python3-pip python3-apt -y
 #Installing Jupyter
-RUN pip3 install jupyter lab -y
+RUN pip3 install jupyterlab
 
 WORKDIR /work_dir
 COPY requirements.txt .
