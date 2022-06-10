@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  jupyter-server:
+    build: .
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    volumes:
+      - .:/work_dir/DA
+    ports:
+      - "8888:8888"
