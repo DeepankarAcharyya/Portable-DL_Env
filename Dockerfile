@@ -17,4 +17,4 @@ RUN pip3 install -r requirements.txt
 
 RUN mkdir DA
 
-CMD [ "jupyter lab --no-browser --notebook-dir /work_dir/DA" ]
+CMD [ "jupyter lab --no-browser --allow-root" ]
